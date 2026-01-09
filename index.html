@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Gym - 프리미엄 헬스 & 피트니스</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link">
+                <div class="logo">VIBE <span>GYM</span></div>
+            </a>
+            <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#facilities">시설 안내</a></li>
+                <li><a href="#equipment">기구 소개</a></li>
+                <li><a href="#membership">회원 등록</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>당신의 한계를 뛰어넘으세요</h1>
+                <p>최고의 시설과 전문 트레이너가 함께하는 VIBE GYM</p>
+                <a href="#membership" class="btn">지금 시작하기</a>
+            </div>
+        </section>
+
+        <section id="facilities" class="section">
+            <div class="container">
+                <h2 class="section-title">프리미엄 시설</h2>
+                <div class="grid">
+                    <div class="card">
+                        <i class="fas fa-shower"></i>
+                        <h3>럭셔리 샤워실</h3>
+                        <p>개인 부스와 최상의 어메니티를 갖춘 쾌적한 샤워 공간</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-coffee"></i>
+                        <h3>멤버십 라운지</h3>
+                        <p>운동 전후 휴식을 위한 편안한 공간과 프로틴 바</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-parking"></i>
+                        <h3>대형 주차장</h3>
+                        <p>3시간 무료 주차가 가능한 넓고 편리한 주차 공간</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipment" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">최신 기구 소개</h2>
+                <div class="grid">
+                    <div class="card equipment-card">
+                        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Treadmill">
+                        <div class="card-body">
+                            <h3>유산소 존</h3>
+                            <p>최신식 매트릭스 트레드밀과 싸이클 완비</p>
+                        </div>
+                    </div>
+                    <div class="card equipment-card">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Weights">
+                        <div class="card-body">
+                            <h3>프리웨이트 존</h3>
+                            <p>해머 스트렝스 정품 기구와 다양한 덤벨 라인업</p>
+                        </div>
+                    </div>
+                    <div class="card equipment-card">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef03a7403f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Rack">
+                        <div class="card-body">
+                            <h3>파워랙 존</h3>
+                            <p>안전하고 효율적인 운동을 위한 5개의 파워랙</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="membership" class="section">
+            <div class="container">
+                <h2 class="section-title">회원 정보 입력</h2>
+                <div class="form-container">
+                    <form id="member-form">
+                        <div class="form-group">
+                            <label for="name">성함</label>
+                            <input type="text" id="name" required placeholder="이름을 입력하세요">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">연락처</label>
+                            <input type="tel" id="phone" required placeholder="010-0000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="goal">운동 목적</label>
+                            <select id="goal">
+                                <option value="diet">다이어트</option>
+                                <option value="muscle">근력 향상</option>
+                                <option value="health">건강 유지</option>
+                                <option value="rehab">재활 운동</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">추가 문의사항</label>
+                            <textarea id="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-block">상담 신청하기</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 VIBE GYM. All rights reserved.</p>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
